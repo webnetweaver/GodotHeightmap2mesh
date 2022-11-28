@@ -7,6 +7,8 @@ Script can be used for generating a mesh for a collision heightmap at runtime an
 
 Generated mesh supports uvs, normals, and tangents and can be textured, and use normal maps
 
+MIT License
+
 Usage:
 
 - Download the script(heightmapmesh.gd) and add to a heightmap collision node.
