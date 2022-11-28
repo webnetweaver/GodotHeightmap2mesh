@@ -7,6 +7,8 @@ Script can be used for generating a mesh for a collision heightmap at runtime an
 
 Generated mesh supports uvs, normals, and tangents and can be textured, and use normal maps
 
+This has only been tested with Godot 3.
+
 MIT License
 
 Usage:
