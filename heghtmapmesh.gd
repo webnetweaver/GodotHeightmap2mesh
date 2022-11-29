@@ -10,10 +10,6 @@ func _ready():
 	
 	var vertices: PoolVector3Array = PoolVector3Array()
 	
-	var normals: PoolVector3Array = PoolVector3Array()
-	
-	var tangents: PoolRealArray = PoolRealArray()
-	
 	var uvs: PoolVector2Array = PoolVector2Array()
 	
 	var uvs2: PoolVector2Array = PoolVector2Array()
