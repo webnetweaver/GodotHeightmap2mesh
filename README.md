@@ -15,6 +15,7 @@ Usage:
 
 - Download the script(heightmapmesh.gd) and add to a collisionshape node with shape set to heightmapshape.
 - Script has an exported field: Export file name.  Set this to the desired path and file name of the generated mesh file.
+- The dimensions of the heightmapshape should be at least 2x2.
 - Run the project.  The script will generate a MeshInstance node as a child of the collisionshape node. This temporary MeshInstance node is mainly for inspection of the generated mesh.
 - To use the generated mesh, add a new MeshInstance node to the scene and select it.  In the Godot file system, navigate to the generated mesh file. Drag the generated mesh file onto the "Mesh" field of the new MeshInstance node.
 - Script is only for creating the mesh file.  It can now be removed from the collisionshape node.
