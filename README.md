@@ -7,7 +7,7 @@ Script can be used for generating a mesh from a collisionshape node with shape s
 
 Generated mesh supports uvs, normals, and tangents and can be textured, and use normal maps
 
-This has been tested with Godot 3.5 only.
+This has been tested with Godot 4.4.1.
 
 MIT License
 
