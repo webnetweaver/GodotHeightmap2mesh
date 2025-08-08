@@ -1,18 +1,18 @@
-extends CollisionShape
+extends CollisionShape3D
 
-export var ExportFileName: String = "res://heightmap.tres"
+@export var ExportFileName: String = "res://heightmap.tres"
 
 func _ready():
-	var heightmapShape: HeightMapShape = shape
+	var heightmapShape: HeightMapShape3D = shape
 	var heights = heightmapShape.get_map_data()
 	
 	var index = 0
 	
-	var vertices: PoolVector3Array = PoolVector3Array()
+	var vertices: PackedVector3Array = PackedVector3Array()
 	
-	var uvs: PoolVector2Array = PoolVector2Array()
+	var uvs: PackedVector2Array = PackedVector2Array()
 	
-	var uvs2: PoolVector2Array = PoolVector2Array()
+	var uvs2: PackedVector2Array = PackedVector2Array()
 	
 	var heightmapPoints: Array = []
 	
@@ -24,7 +24,7 @@ func _ready():
 	var arrays: Array = []
 	
 	var st: SurfaceTool = SurfaceTool.new()
-	var meshInst = MeshInstance.new()
+	var meshInst = MeshInstance3D.new()
 	
 	var xDelta: float
 	var zDelta: float
@@ -169,6 +169,4 @@ func _ready():
 	
 	#Save generated mesh in resource file if filename is given
 	if ExportFileName:
-		ResourceSaver.save("%s"%ExportFileName, meshInst.mesh, ResourceSaver.FLAG_COMPRESS)
-
-
+		ResourceSaver.save(meshInst.mesh, "%s"%ExportFileName, ResourceSaver.FLAG_COMPRESS)
